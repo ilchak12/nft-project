@@ -1,0 +1,85 @@
+$color-white: #FFFFFF;
+$color-black: #000000;
+
+$fontsize: 24px;
+$font-main: 'Manrope', sans-serif;
+$font-second: 'Migra', sans-serif;
+
+$color-baby-powder: #FFFCF9;
+$color-light-gray: #E8E8E8;
+$color-gray: #4E4E4E;
+$color-gray-black: #0D0D0D;
+
+$color-yellow: #F4C500;
+
+$color-dark-green: #08833B;
+$color-light-green: #7FFBB4;
+
+$color-red: #7A0901;
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+

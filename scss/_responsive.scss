@@ -1,0 +1,329 @@
+@use "sass:math";
+
+@media only screen and (max-width: 2560px) {
+
+}
+
+@media only screen and (min-width: 1921px) {
+
+}
+
+@media only screen and (min-width: 1819px) {
+
+}
+
+@media only screen and (min-width: 1619px) {
+
+}
+
+@media only screen and (max-width: 1281px) {
+	.what-nft {
+		&__grid-item {
+			padding: 50px 20px 50px 50px;
+
+			&:nth-child(2) {
+				padding-left: 20px;
+				padding-right: 50px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1025px) {
+	.container {
+		width: 89%;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+
+	h4 {
+		font-size: 18px;
+	}
+
+	p,
+	li {
+		font-size: 18px;
+	}
+
+	ul {
+		li {
+			margin-left: 20px;
+
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+	.btn {
+		&_big {
+			font-size: 18px;
+			max-width: 200px;
+		}
+	}
+
+	.what-nft {
+		&__grid-item {
+			padding: 40px 30px;
+
+			&:nth-child(2) {
+				padding: 40px 30px;
+			}
+		}
+
+		&__item-title {
+			width: 100%;
+		}
+	}
+
+	.nft {
+		&__tab {
+			&_gold {
+				.nft__card {
+					box-shadow: 0 0 14px rgba(255, 206, 0, 0.4);
+				}
+			}
+		}
+
+		&__card-list {
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		&__card {
+			box-shadow: 0 0 14px rgba(229, 229, 229, 0.4);
+		}
+	}
+
+	.popup {
+		&__window {
+			width: max-content;
+			max-width: 90vw;
+			padding: 60px 40px;
+		}
+
+		&__inner {
+			.popup__descr {
+				margin-top: 40px;
+			}
+
+			.popup__btn {
+				margin-top: 60px;
+			}
+		}
+
+		&__inputs-list {
+			margin-top: 40px;
+			padding: 0;
+		}
+
+		&__input {
+			padding: 15px 10px;
+			font-size: 18px;
+		}
+	}
+}
+
+@media only screen and (max-width: 901px) {
+}
+
+@media only screen and (max-width: 769px) {
+	.main {
+		padding: 60px 0;
+	}
+
+	h2 {
+		font-size: $fontsize;
+	}
+
+	h4 {
+		font-size: 16px;
+	}
+
+	p,
+	li {
+		font-size: 16px;
+	}
+
+	.container {
+		width: 100%;
+		padding: 0 15px;
+		max-width: none;
+	}
+
+	.switcher {
+		height: 14px;
+		width: 30px;
+
+		input {
+			&:checked + .switcher__slider {
+				&::before {
+					left: calc(100% - 12px - 1px);
+				}
+			}
+		}
+
+		&__slider {
+			&::before {
+				height: 12px;
+				width: 12px;
+			}
+		}
+	}
+
+
+	.what-nft {
+		&__grid {
+			grid-template-columns: 1fr;
+			margin-top: 60px;
+		}
+
+		&__grid-item {
+			padding: 40px 20px;
+
+			&::after {
+				transform: scaleX(-1);
+				background-position: bottom center;
+			}
+
+			&:nth-child(2) {
+				padding: 40px 20px;
+
+				&::after {
+					transform: scaleX(1);
+					background-position: bottom center;
+				}
+			}
+		}
+
+		&__item-list {
+			margin-top: 20px;
+		}
+
+		&__item-title {
+			width: 75%;
+		}
+	}
+
+	.nft {
+		padding-top: 60px;
+
+		&__tab {
+			&:not(:last-child) {
+				margin-bottom: 60px;
+			}
+		}
+
+		&__tab-pros {
+			margin-top: 60px;
+		}
+
+		&__card-list {
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 25px 20px;
+			margin-top: 60px;
+		}
+	}
+
+	.popup {
+		&__window {
+			padding: 30px;
+		}
+
+		&__form {
+			.popup__btn {
+				margin-top: 30px;
+			}
+		}
+
+		&__inner {
+			.popup__btn {
+				margin-top: 30px;
+			}
+		}
+
+		&__inputs-list {
+			margin-top: 30px;
+			grid-gap: 15px;
+		}
+
+		&__input {
+			padding: 10px 8px;
+			font-size: 16px;
+		}
+
+		&__error {
+			font-size: 12px;
+		}
+	}
+}
+
+@media only screen and (max-width: 651px) {
+}
+
+@media only screen and (max-width: 551px) {
+	.nft {
+		&__tab {
+			padding: 20px 12px 15px;
+		}
+
+		&__tab-top-content {
+			flex-direction: column;
+			gap: 16px;
+		}
+		
+		&__tab-top-left {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__tab-subtitle {
+			margin-top: 10px;
+		}
+
+		&__tab-inner {
+			margin: 0 -12px;
+			padding: 0 12px;
+		}
+
+		&__tab-pros {
+			margin-top: 25px;
+		}
+
+		&__card-list {
+			grid-template-columns: repeat(2, 1fr);
+			margin: 25px -12px 10px;
+		}
+	}
+
+	.btn-plus {
+		&::before,
+		&::after {
+			background-color: $color-baby-powder;
+			width: 62%;
+			height: 3px;
+		}
+
+		&::before {
+			transform: rotate(45deg);
+			left: 0;
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+			right: 0;
+		}
+	}
+}
+
+@media only screen and (max-width: 421px) {
+}
+
+@media only screen and (max-width: 361px) {
+}
+
+@media only screen and (max-width: 321px) {
+}
