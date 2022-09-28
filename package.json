@@ -1,0 +1,55 @@
+{
+  "name": "start",
+  "type": "module",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "del": "^6.1.1",
+    "grunt-contrib-imagemin": "^4.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-image": "^6.3.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-prettier": "^4.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^5.0.0",
+    "postcss": "^8.4.14"
+  },
+  "scripts": {
+    "tailwind-FD": "npx tailwindcss -i ./src/css/_tailwind.css -o ./src/css/tailwind-export.css --watch --minify",
+    "tailwind-FD minify": "npx tailwindcss -i ./src/css/_tailwind.css -o ./src/css/tailwind-export.css --watch --minify",
+    "tailwind-SD": "npx tailwindcss -i ./app/public/css/_tailwind.css -o ./app/public/css/tailwind-export.css --watch",
+    "tailwind-SD minify": "npx tailwindcss -i ./app/public/css/_tailwind.css -o ./app/public/css/tailwind-export.css --watch --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-minify-css": "^1.2.4",
+    "gulp-run-command": "^0.0.10",
+    "gulp-sourcemaps": "^3.0.0",
+    "imagemin": "^8.0.1",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-svgo": "^10.0.1",
+    "imagemin-webp": "^7.0.0",
+    "sass": "^1.52.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}

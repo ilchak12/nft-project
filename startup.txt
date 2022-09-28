@@ -1,0 +1,12 @@
+# Крок №1. Спершу потрібно встановити всі Node Packages (Потрібно тільки перший раз, далі починати з Кроку №2)
+npm install gulp sass gulp-sass gulp-csso gulp-file-include del gulp-concat gulp-sourcemaps gulp-autoprefixer merge-stream fs path imagemin imagemin-jpegtran imagemin-pngquant imagemin-svgo imagemin-mozjpeg imagemin-webp browser-sync --global
+
+# Крок №2. Далі додаємо node_modules до проекту
+npm i
+
+# Крок №3. Запускаємо Gulp у режимі Browsersync
+gulp serve
+
+# Крок №4. Запускаємо Tailwind CSS npx tailwindcss -i ./src/css/_tailwind.css -o ./src/css/tailwind-export.css --watch
+
+# Крок №5. Починаємо робити проект)

@@ -1,0 +1,8 @@
+node_modules/
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/.gitignore
+/.idea/deployment.xml
+/.idea/gulp-start-project.iml
+/.idea/modules.xml
+/.idea/vcs.xml
+dist/

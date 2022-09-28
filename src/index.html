@@ -1,0 +1,217 @@
+@@include('./html/html-top.html', { 'title': "Home" })
+
+<!--@@include('./html/header.html')-->
+
+<main class="main">
+    <section class="what-nft">
+        <div class="container what-nft__container">
+            <h2 class="what-nft__title">What is NFT?</h2>
+
+            <div class="what-nft__descr">
+                <p>Non-fungible tokens, often referred to as NFTs, are blockchain-based tokens that each represent a unique asset like a piece of art, digital content, or media. </p>
+            </div>
+        </div>
+
+        <div class="what-nft__grid">
+            <div class="what-nft__grid-item">
+                <h4 class="what-nft__item-title">FOR music connoisseurs and collectors of contemporary art</h4>
+
+                <ul class="what-nft__item-list">
+                    <li>Protected digital asset to invest in.</li>
+                    <li>NFTs allow for the support of authoring projects and the development of a crypto-art community.</li>
+                    <li>Digital asset that greatly appreciates over time.</li>
+                </ul>
+            </div>
+
+            <div class="what-nft__grid-item">
+                <h4 class="what-nft__item-title">FOR brands</h4>
+
+                <ul class="what-nft__item-list">
+                    <li>Trendy way of communication with audience.</li>
+                    <li>Unique brand experiences that inspires engagement.</li>
+                    <li>Efficient digital assets to invest in.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="nft">
+        <div class="container nft__container">
+            <div class="nft__tab">
+                <div class="nft__tab-top-content">
+                    <div class="nft__tab-top-left">
+                        <h2 class="nft__tab-title">Silver NFT</h2>
+                        <p class="nft__tab-subtitle">Available for purchase: <span class="nft__available">100</span> NFT</p>
+
+                        <div class="nft__active-cards">
+                            <label class="switcher" for="silver">
+                                <input type="checkbox" id="silver" />
+                                <div class="switcher__slider"></div>
+                            </label>
+
+                            <p class="nft__show-hide">Hide sold posters</p>
+                        </div>
+                    </div>
+
+                    <div class="nft__tab-top-right">
+                        <div class="btn-plus"></div>
+                    </div>
+                </div>
+
+                <div class="nft__tab-inner">
+                    <h4 class="nft__tab-pros">You get: <br>
+                        -  NFT poster + sponsor logo on web page</h4>
+
+                    <div class="nft__card-list">
+                        @@include('./html/nft-card.html', {
+                            'card_image': "card_1.jpg",
+                            'card_price': "50₣"
+                        })
+
+                        @@include('./html/nft-card.html', {
+                            'card_image': "card_2.jpg",
+                            'card_price': "50₣"
+                        })
+
+                        @@include('./html/nft-card.html', {
+                            'card_image': "card_3.jpg",
+                            'card_price': "50₣"
+                        })
+
+                        @@include('./html/nft-card.html', {
+                            'card_image': "card_4.jpg",
+                            'card_price': "50₣"
+                        })
+
+                        @@include('./html/nft-card.html', {
+                            'card_image': "card_5.jpg",
+                            'card_price': "50₣"
+                        })
+
+                        @@include('./html/nft-card.html', {
+                            'card_image': "card_6.jpg",
+                            'card_price': "50₣"
+                        })
+
+                        @@include('./html/nft-card.html', {
+                            'card_image': "card_7.jpg",
+                            'card_price': "50₣"
+                        })
+
+                        @@include('./html/nft-card.html', {
+                            'card_image': "card_8.jpg",
+                            'card_price': "50₣"
+                        })
+
+                        @@include('./html/nft-card.html', {
+                            'card_image': "card_9.jpg",
+                            'card_price': "50₣"
+                        })
+                    </div>
+                </div>
+            </div>
+
+            <div class="nft__tab nft__tab_gold">
+                <div class="nft__tab-top-content">
+                    <div class="nft__tab-top-left">
+                        <h2 class="nft__tab-title">Gold NFT</h2>
+                        <p class="nft__tab-subtitle">Available for purchase: <span class="nft__available">10</span> NFT</p>
+
+                        <div class="nft__active-cards">
+                            <label class="switcher" for="gold">
+                                <input type="checkbox" id="gold" />
+                                <div class="switcher__slider"></div>
+                            </label>
+
+                            <p class="nft__show-hide">Hide sold posters</p>
+                        </div>
+                    </div>
+
+                    <div class="nft__tab-top-right">
+                        <div class="btn-plus"></div>
+                    </div>
+                </div>
+
+                <div class="nft__tab-inner">
+                    <h4 class="nft__tab-pros">You get: <br>
+                        -  NFT poster + sponsor logo on web page <br>
+                        -  Invitation for 2 people to Zurich concert pre-party at Kongresshaus LUX Restaurant & Bar </h4>
+
+                    <div class="nft__card-list">
+                        @@include('./html/nft-card.html', {
+                        'card_image': "card_6.jpg",
+                        'card_price': "50₣"
+                        })
+
+                        @@include('./html/nft-card.html', {
+                        'card_image': "card_7.jpg",
+                        'card_price': "50₣"
+                        })
+
+                        @@include('./html/nft-card.html', {
+                        'card_image': "card_8.jpg",
+                        'card_price': "50₣"
+                        })
+
+                        @@include('./html/nft-card.html', {
+                        'card_image': "card_9.jpg",
+                        'card_price': "50₣"
+                        })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div class="popup">
+    <div class="popup__window">
+        <form action="" method="" class="popup__form">
+            <div class="btn-close popup__btn-close"></div>
+
+            <h2 class="popup__title">Ready to purchase?</h2>
+            <p class="popup__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt quam convallis a lacus consequat, ultrices.</p>
+
+            <div class="popup__inputs-list">
+                <div class="popup__input-area">
+                    <input type="text" class="popup__input popup__input_fname" placeholder="First Name">
+                    <p class="popup__error popup__error_fname"></p>
+                </div>
+
+                <div class="popup__input-area">
+                    <input type="text" class="popup__input popup__input_lname" placeholder="Last Name">
+                    <p class="popup__error popup__error_lname"></p>
+                </div>
+
+                <div class="popup__input-area">
+                    <input type="email" class="popup__input popup__input_email" placeholder="Email@gmail.com">
+                    <p class="popup__error popup__error_email"></p>
+                </div>
+
+                <div class="popup__input-area">
+                    <input type="text" class="popup__input popup__input_number" placeholder="+48 328 4870 09 27" inputmode="numeric">
+                    <p class="popup__error popup__error_number"></p>
+                </div>
+            </div>
+
+            <div class="popup__images">
+                <img src="./images/maestro.svg" alt="">
+                <img src="./images/visa.svg" alt="">
+            </div>
+
+            <button class="btn btn_big popup__btn popup__submit-btn">Buy NFT</button>
+        </form>
+
+        <div class="popup__inner hide">
+            <h2 class="popup__title">Thanks!</h2>
+            <p class="popup__descr">The purchase of <span>NFT Alexey Botvinov</span> has been successfully completed.</p>
+            <div class="btn btn_green btn_big popup__btn popup__thanks-btn">OK</div>
+        </div>
+    </div>
+
+    <div class="popup__bg"></div>
+</div>
+
+<!--@@include('./html/footer.html')-->
+
+@@include('./html/html-bottom.html')

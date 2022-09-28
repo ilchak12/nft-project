@@ -1,0 +1,21 @@
+image: ubuntu:18.04
+
+before_script:
+  - apt-get update -qq
+  - apt-get install -qq git
+  # Setup SSH deploy keys
+  - 'which ssh-agent || ( apt-get install -qq openssh-client )'
+  - eval $(ssh-agent -s)
+  - ssh-add <(echo "$SSH_PRIVATE_KEY")
+  - mkdir -p ~/.ssh
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+deploy_staging:
+  stage: deploy
+  environment:
+    name: staging
+    url: 83.223.113.113
+  script:
+    - ssh bolddevco@83.223.113.113 "cd /home/bolddevco/public_html/gulp-start-project/ && git checkout main && git pull origin main && exit"
+  only:
+    - main
